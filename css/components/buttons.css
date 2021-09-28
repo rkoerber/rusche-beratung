@@ -1,8 +1,10 @@
 .btn-main {
   background: #DBB39A;
+  color: #343a40;
 }
 
 .btn-main:hover {
   background: #E8C281;
+  color: #343a40;
   transition: 0.3s ease;
 }

@@ -1,4 +1,16 @@
 @import url("components/buttons.css");
+@import url("components/navbar.css");
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #343a40;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #343a40;
+}
 
 
 .divider {
