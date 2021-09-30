@@ -16,6 +16,10 @@ p {
   font-size: 1.3rem;
 }
 
+.lead {
+  font-size: 1.5rem;
+}
+
 .content-wrapper {
   border: 3px solid rbga(0, 0, 0, 0.025);
 }
