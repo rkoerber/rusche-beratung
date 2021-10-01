@@ -16,6 +16,14 @@ p {
   font-size: 1.3rem;
 }
 
+a {
+  color: #AF8F7B;
+}
+
+a:hover {
+  color: #DBB39A;
+}
+
 *[id]:before {
   display: block;
   content: " ";
