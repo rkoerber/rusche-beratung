@@ -1,12 +1,11 @@
 .navbar-light .navbar-brand {
   color: #343a40;
-  /*text-transform: uppercase;*/
 }
 
 
 .navbar-light .navbar-nav .nav-link {
   color: #5E6142;
-  /*text-transform: uppercase;*/
+  font-weight: 400;
   letter-spacing: .05rem;
   transition: 0.3s ease;
   border-top: 4px solid transparent;
