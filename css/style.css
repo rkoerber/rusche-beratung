@@ -53,6 +53,13 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.img-main {
-  max-height: 350px;
+.img-round {
+  max-height: 300px;
+  margin-bottom: 16px;
+}
+
+.img-square {
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
 }
