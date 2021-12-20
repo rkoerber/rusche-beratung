@@ -237,8 +237,8 @@
         coordinates: [13.467490, 52.505910]
         },
       properties: {
-        title: 'Mapbox',
-        description: 'Washington, D.C.'
+        title: 'Desafinado',
+        description: 'Lenbachstr. 16, Berlin'
         }
     };
 
@@ -250,7 +250,7 @@
       .setPopup(
         new mapboxgl.Popup({ offset: 25 })
         .setHTML(
-        `<h4>Desafinado</h4>`
+        `<h4>${geojson.properties.title}</h4><p>${geojson.properties.description}</p>`
           )
         )
       .addTo(map);
