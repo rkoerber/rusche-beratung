@@ -207,14 +207,33 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer mt-auto pt-2 bg-dark">
     <ul class="nav justify-content-center">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Impressum</a></li>
+      <li class="nav-item"><a href="/impressum" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#impressumModal">Impressum</a></li>
       <li class="nav-item"><a href="/credits" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#creditsModal">Credits</a></li>
       <p class="text-muted lh-6 fs-4">&nbsp|&nbsp</p>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">© 2021 Leo Körber</a></li>
     </ul>
   </footer>
+
+  <!-- Impressum Modal -->
+  <div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="impressumModalLabel">Impressum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small">Impressum folgt.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Credits Modal -->
   <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
@@ -229,7 +248,7 @@
           <p class="small">Favicon-Font: The Girl Next Door, erstellt von <a href="http://www.kimberlygeswein.com/" target="_blank">Kimberly Geswein</a>, Copyright (c) 2010.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
