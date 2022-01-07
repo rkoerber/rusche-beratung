@@ -120,13 +120,19 @@
 
           <div class="row align-items-center justify-content-md-center mb-4">
             <div class="col-sm-3">
-              <img src="images/single.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Ein nur zur Hälfte sichtbares Gesicht eines Menschen, dessen andere Gesichtshälfte hinter einem Spiegel verborgen bleibt" height="400">
+              <a tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" title="Erstes Mal" data-bs-content="In der ersten Sitzung beraten wir Ihr Anliegen. Im Gespräch verschaffen wir uns einen Überblick: Wie ist Ihr Thema in Ihre Sexualität eingebettet? Wie funktioniert Ihr sexuelles System? Am Ende der Sitzung stelle ich Ihnen mögliche Pfade für das weitere Beratungsvorgehen vor. Im Mittelpunkt ist dabei immer Ihr Ziel.">
+                <img src="images/single.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Ein nur zur Hälfte sichtbares Gesicht eines Menschen, dessen andere Gesichtshälfte hinter einem Spiegel verborgen bleibt" height="400">
+              </a>
             </div>
             <div class="col-sm-3">
-              <img src="images/tent.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Zwei Menschen sitzen einander zugewandt in einem Zelt in der Natur" height="400">
+              <a tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" title="Einzigartig" data-bs-content="Jeder Mensch hat eine individuelle, unverwechselbare Sexualität. Von frühester Kindheit an entwickelt sich ein vielfältiges Geflecht von Vorlieben und Phantasien. Viele Menschen sammeln zudem Erfahrungen damit, ihre Sexualität mit anderen Menschen zu erleben und zu gestalten. Dies alles ist eingebettet in eine Gesellschaft, die uns auf allen Kanälen sexualisierte und sexualisierende Botschaften sendet. In meiner Beratung ist ein Bewusstsein für die Widersprüchlichkeiten und Schwierigkeiten vorhanden, die die Suche nach einer stimmigen, individuell erfüllenden Sexualität mit sich bringt. Ich unterstütze beim Erkunden oder Wiedererlangen des eigenen Weges, bei der Orientierung und Klärung der eigenen Ziele.">
+                <img src="images/tent.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Zwei Menschen sitzen einander zugewandt in einem Zelt in der Natur" height="400">
+              </a>
             </div>
             <div class="col-sm-3">
-              <img src="images/couple.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Ein älteres Pärchen tanzt in einem Zimmer und lächelt einander an" height="400">
+              <a tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" title="In Bewegung" data-bs-content="Sexualität ist nicht statisch, sondern immer in Bewegung - so, wie das Leben auch in Bewegung bleibt. Unsere Sexualität kann mit uns gemeinsam älter und reifer werden. Die Veränderungen des Alters oder durch Erkrankungen und Unfälle können eine bis dahin erfüllte Sexualität aber auch vor neue Herausforderungen stellen. Als körperbezogener Beratungsansatz bietet Sexocorporel zahlreiche Werkzeuge, um die eigene Sexualität immer wieder neu beleben und bewegen zu können.">
+                <img src="images/couple.png" class="img-fluid img-shadow img-round img-thumbnail rounded-circle" alt="Ein älteres Pärchen tanzt in einem Zimmer und lächelt einander an" height="400">
+              </a>
             </div>
           </div>
 
@@ -217,7 +223,7 @@
     </ul>
   </footer>
 
-  <!-- Impressum Modal -->
+  <!-- Impressum -->
   <div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -243,7 +249,7 @@
     </div>
   </div>
 
-  <!-- Credits Modal -->
+  <!-- Credits -->
   <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -265,6 +271,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
   <script>
+
+    // Popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    });
+
 
     // Mapbox integration
     mapboxgl.accessToken = 'pk.eyJ1IjoiYWVvbndyZW4iLCJhIjoiY2t4ZWpmenNmMGEzcDJvbnA3NmpzcGx3ZCJ9.ulXE7b2qjPphFndlKwf__Q';
